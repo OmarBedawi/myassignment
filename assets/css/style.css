@@ -1,0 +1,60 @@
+.card{
+    border: 0;
+}
+
+.categorie{
+    list-style: none;
+    
+}
+
+.maat{
+    list-style: none;
+}
+
+
+
+.maat li{
+    display: inline;
+    border-radius: 50%;
+    border: 1px rgb(212, 202, 202) solid;
+    margin: 7px;
+}
+
+.maat li a{
+    color: black;
+    margin: 3px;    
+}
+
+.maat li:hover{
+    background-color: black;
+}
+
+.maat li a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.kleur{
+    list-style: none;
+}
+
+.kleur li a{
+    color: black;
+}
+
+.kleur li a:hover{
+    text-decoration: none;
+}
+
+.white-color{
+    border: black solid 1px;
+    border-radius: 50%;
+}
+
+.collapse-title{
+    color: black;
+}
+
+.collapse-title:hover{
+    text-decoration: none;
+}
