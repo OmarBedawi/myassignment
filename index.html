@@ -14,12 +14,33 @@
         <title>My Assignment</title>
     </head>
     <body>
-        <div class="container ml-0">
+      <div id="banner" class="text-center">
+        <div class="col bg-dark text-white">
+            <h6><span class="winkel">Gratis returneren in de winkel</span></h6>
+            <h6><span class="maten">Maten 40-54</span></h6>
+            <h6><span class="besteld">Voor 19:30 besteld, morgen in huis</span></h6>                
+        </div>            
+      </div>
+    
+    <div class="container-fluid">  
+      <div class="dropdown row text-right">
+        <div class="d-none d-md-block">Sorteren op:&nbsp;&nbsp;</div>
+        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Regular
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Regular</a>
+          <a class="dropdown-item" href="#">Reverse</a>
+        </div>
+      </div>
+    </div>
+    
+        <div class="container-fluid ml-0">
             <div class="row">
-              <div class="col-4">
-                <div class="mt-5" id="accordion">
+              <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4">
+                <div class="mt-0" id="accordion">
                     <div class="card">
-                      <div class="card-header pl-0" id="headingOne">
+                      <div class="card-header pl-0 bg-white collapse-border" id="headingOne">
                         <h5 class="mb-0">
                           <button class="btn btn-link text-capitalize collapse-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             categorie
@@ -44,7 +65,7 @@
                       </div>
                     </div>
                     <div class="card">
-                      <div class="card-header pl-0" id="headingTwo">
+                      <div class="card-header pl-0 bg-white collapse-border" id="headingTwo">
                         <h5 class="mb-0">
                           <button class="btn btn-link collapsed text-capitalize collapse-title" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             maat
@@ -77,7 +98,7 @@
                       </div>
                     </div>
                     <div class="card">
-                      <div class="card-header pl-0" id="headingThree">
+                      <div class="card-header pl-0 bg-white collapse-border" id="headingThree">
                         <h5 class="mb-0">
                           <button class="btn btn-link collapsed text-capitalize collapse-title" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             kleur
@@ -111,9 +132,119 @@
                     </div>
                   </div>
               </div>
-              <div class="col-8 mt-5">
-                2 of 3 (wider)
+            <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8">
+              <div class="row mt-3 mr-0">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                  <div class="card">
+                    <img src="https://picsum.photos/200/300" class="img-fluid" alt="card 1">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline">Skirt</h5>
+                        <p class="card-text float-right">€10.99</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                  <div class="card">
+                    <img src="https://picsum.photos/200/300" class="img-fluid" alt="card 2">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline">Skirt</h5>
+                        <p class="card-text float-right">€20.99</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                  <div class="card">
+                    <img src="https://picsum.photos/200/300" class="img-fluid" alt="card 3">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline">Skirt</h5>
+                        <p class="card-text float-right">€30.99</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                  <div class="card">
+                    <img src="https://picsum.photos/200/300" class="img-fluid" alt="card 4">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline">Skirt</h5>
+                        <p class="card-text float-right">€40.99</p>
+                    </div>
+                  </div>  
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                  <div class="card">
+                    <img src="https://picsum.photos/200/300" class="img-fluid" alt="card 5">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline">Skirt</h5>
+                        <p class="card-text float-right">€50.99</p>
+                    </div>
+                  </div>  
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                  <div class="card">
+                    <img src="https://picsum.photos/200/300" class="img-fluid" alt="card 6">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline">Skirt</h5>
+                        <p class="card-text float-right">€60.99</p>
+                    </div>
+                  </div>  
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                  <div class="card">
+                    <img src="https://picsum.photos/200/300" class="img-fluid" alt="card 7">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline">Skirt</h5>
+                        <p class="card-text float-right">€70.99</p>
+                    </div>
+                  </div>  
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                  <div class="card">
+                    <img src="https://picsum.photos/200/300" class="img-fluid" alt="card 8">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline">Skirt</h5>
+                        <p class="card-text float-right">€80.99</p>
+                    </div>
+                  </div>  
+                </div>
               </div>
+            </div>
+<!--              <div class="col-8 col-lg-2 mt-5">
+                <div class="photo">
+                  
+                  <div class="card">
+                    <img src="https://picsum.photos/200/300" class="img-fluid" alt="card 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Skirt</h5>
+                        <p class="card-text">$69.99</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="https://picsum.photos/200/300" class="img-fluid" alt="card 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Skirt</h5>
+                        <p class="card-text">$69.99</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="https://picsum.photos/200/300" class="img-fluid" alt="card indoor 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Skirt</h5>
+                        <p class="card-text">$69.99</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="https://picsum.photos/200/300" class="img-fluid" alt="card indoor 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Skirt</h5>
+                        <p class="card-text">$69.99</p>
+                    </div>
+                  </div>
+
+
+
+                </div>
+                
+              </div>-->
             </div>
           </div>
         

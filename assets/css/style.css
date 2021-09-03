@@ -4,14 +4,11 @@
 
 .categorie{
     list-style: none;
-    
 }
 
 .maat{
     list-style: none;
 }
-
-
 
 .maat li{
     display: inline;
@@ -53,8 +50,82 @@
 
 .collapse-title{
     color: black;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .collapse-title:hover{
     text-decoration: none;
+    color: black;
 }
+
+#banner h6{
+    display: inline;
+    margin: 50px;
+}
+
+.dropdown{
+    margin: 20px 20px 20px 20px;
+}
+
+
+.dropdown button{
+    border-radius:36px;/*
+    display:inline-block;
+    overflow:hidden;*/
+    border:1px solid black;
+    width: 200px;
+}
+
+.collapse-border{
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+
+@media (max-width: 576px) {
+    .maten, .besteld{
+        display: none;
+    }
+
+    #banner h6{
+        margin: 0px;
+    }
+    
+}
+
+@media (min-width: 576px) and (max-width:768px) {
+    .maten, .besteld{
+        display: none;
+    }
+
+    #banner h6{
+        margin: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:992px) {
+    .maat{
+        margin: 0px;        
+    }
+    .maat li{
+        margin: 5px;
+    }
+    
+    .maat li a{
+        margin: 0;    
+    }
+
+    .maten{
+        display: none;
+    }
+
+    #banner h6{
+        margin: 30px;
+    }
+
+    .product{
+        display: block;
+        float: unset;
+    }
+}
+
