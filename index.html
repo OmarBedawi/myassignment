@@ -26,11 +26,11 @@
       <div class="dropdown row text-right">
         <div class="d-none d-md-block">Sorteren op:&nbsp;&nbsp;</div>
         <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Regular
+          Sort
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Regular</a>
-          <a class="dropdown-item" href="#">Reverse</a>
+          <a class="dropdown-item" href="#" data-sort="regular">Regular</a>
+          <a class="dropdown-item" href="#" data-sort="reverse">Reverse</a>
         </div>
       </div>
     </div>
@@ -133,8 +133,8 @@
                   </div>
               </div>
             <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8">
-              <div class="row mt-3 mr-0">
-                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+              <div class="row mt-3 mr-0" id="original">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 product">
                   <div class="card">
                     <img src="https://picsum.photos/200/300" class="img-fluid" alt="card 1">
                     <div class="card-body">
@@ -143,7 +143,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 product">
                   <div class="card">
                     <img src="https://picsum.photos/200/300" class="img-fluid" alt="card 2">
                     <div class="card-body">
@@ -152,7 +152,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 product">
                   <div class="card">
                     <img src="https://picsum.photos/200/300" class="img-fluid" alt="card 3">
                     <div class="card-body">
@@ -161,7 +161,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 product">
                   <div class="card">
                     <img src="https://picsum.photos/200/300" class="img-fluid" alt="card 4">
                     <div class="card-body">
@@ -170,7 +170,7 @@
                     </div>
                   </div>  
                 </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 product">
                   <div class="card">
                     <img src="https://picsum.photos/200/300" class="img-fluid" alt="card 5">
                     <div class="card-body">
@@ -179,7 +179,7 @@
                     </div>
                   </div>  
                 </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 product">
                   <div class="card">
                     <img src="https://picsum.photos/200/300" class="img-fluid" alt="card 6">
                     <div class="card-body">
@@ -188,7 +188,7 @@
                     </div>
                   </div>  
                 </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 product">
                   <div class="card">
                     <img src="https://picsum.photos/200/300" class="img-fluid" alt="card 7">
                     <div class="card-body">
@@ -197,7 +197,7 @@
                     </div>
                   </div>  
                 </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 product">
                   <div class="card">
                     <img src="https://picsum.photos/200/300" class="img-fluid" alt="card 8">
                     <div class="card-body">
@@ -207,46 +207,10 @@
                   </div>  
                 </div>
               </div>
+              <div class="row mt-3 mr-0 hidden" id="reverse"> Reversed </div>
             </div>
-<!--              <div class="col-8 col-lg-2 mt-5">
-                <div class="photo">
-                  
-                  <div class="card">
-                    <img src="https://picsum.photos/200/300" class="img-fluid" alt="card 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Skirt</h5>
-                        <p class="card-text">$69.99</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img src="https://picsum.photos/200/300" class="img-fluid" alt="card 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Skirt</h5>
-                        <p class="card-text">$69.99</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img src="https://picsum.photos/200/300" class="img-fluid" alt="card indoor 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Skirt</h5>
-                        <p class="card-text">$69.99</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img src="https://picsum.photos/200/300" class="img-fluid" alt="card indoor 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Skirt</h5>
-                        <p class="card-text">$69.99</p>
-                    </div>
-                  </div>
-
-
-
-                </div>
-                
-              </div>-->
             </div>
           </div>
-        
+      <script src="assets/js/script.js"> </script>
     </body>
 </html>

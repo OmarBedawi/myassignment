@@ -123,9 +123,17 @@
         margin: 30px;
     }
 
-    .product{
-        display: block;
-        float: unset;
-    }
 }
 
+@media (min-width: 992px) and (max-width:1200px) {
+    .maat{
+        margin: 0px;        
+    }
+    .maat li{
+        margin: 5px;
+    }
+    
+    .maat li a{
+        margin: 0;    
+    }
+}
