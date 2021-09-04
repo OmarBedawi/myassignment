@@ -1,4 +1,3 @@
-
 var elements =  Array.prototype.slice.call(document.querySelectorAll("div.product"));
 var elementsReversed =  Array.prototype.slice.call(document.querySelectorAll("div.product")).reverse();
 

@@ -63,22 +63,26 @@
     display: inline;
     margin: 50px;
 }
-
+/*
 .dropdown{
     margin: 20px 20px 20px 20px;
-}
+}*/
 
 
 .dropdown button{
-    border-radius:36px;/*
+    border-radius: 36px;/*
     display:inline-block;
     overflow:hidden;*/
-    border:1px solid black;
-    width: 200px;
+    border: 1px solid black;
+    width: 150px;
 }
 
 .collapse-border{
     border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.card-title{
+    left: 0;
 }
 
 
@@ -90,7 +94,17 @@
     #banner h6{
         margin: 0px;
     }
+
+    .maat{
+        margin: 0px;        
+    }
+    .maat li{
+        margin: 4px;
+    }
     
+    .maat li a{
+        margin: 0;    
+    }   
 }
 
 @media (min-width: 576px) and (max-width:768px) {
@@ -135,5 +149,15 @@
     
     .maat li a{
         margin: 0;    
+    }
+}
+
+@media (min-width: 991px) {
+    .card-title{
+        display: inline;
+    }
+
+    .card-text{
+        float: right;
     }
 }
