@@ -1,13 +1,13 @@
-var elements =  Array.prototype.slice.call(document.querySelectorAll("div.product"));
-var elementsReversed =  Array.prototype.slice.call(document.querySelectorAll("div.product")).reverse();
+var elements = Array.prototype.slice.call(document.querySelectorAll("div.product"));
+var elementsReversed = Array.prototype.slice.call(document.querySelectorAll("div.product")).reverse();
 var target = document.querySelectorAll(".collapse-title");
 
-target.forEach((elem)=>{
+target.forEach((elem) => {
     elem.addEventListener('click', appendicon);
 });
 
 
-function appendicon(elem){
+function appendicon(elem) {
     var icon = elem.target.querySelector(".fas");
 
     console.log(icon);
@@ -18,19 +18,17 @@ function appendicon(elem){
     console.log(elem);
 }
 
-//target.forEach(appendicon)
 
-function sortItems(event){
+function sortItems(event) {
     let sortType = event.target.getAttribute('data-sort');
-    if (sortType==='reverse'){
+    if (sortType === 'reverse') {
         document.getElementById('reverse').innerHTML = '';
         elementsReversed.forEach(function(elem) {
             document.getElementById('reverse').appendChild(elem);
         });
         document.getElementById('original').classList.add('hidden');
         document.getElementById('reverse').classList.remove('hidden');
-    }
-    else{
+    } else {
         document.getElementById('original').innerHTML = '';
         elements.forEach(function(elem) {
             document.getElementById('original').appendChild(elem);
