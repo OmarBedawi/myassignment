@@ -1,5 +1,24 @@
 var elements =  Array.prototype.slice.call(document.querySelectorAll("div.product"));
 var elementsReversed =  Array.prototype.slice.call(document.querySelectorAll("div.product")).reverse();
+var target = document.querySelectorAll(".collapse-title");
+
+target.forEach((elem)=>{
+    elem.addEventListener('click', appendicon);
+});
+
+
+function appendicon(elem){
+    var icon = elem.target.querySelector(".fas");
+
+    console.log(icon);
+
+    icon.classList.toggle('fa-plus');
+    icon.classList.toggle('fa-minus');
+
+    console.log(elem);
+}
+
+//target.forEach(appendicon)
 
 function sortItems(event){
     let sortType = event.target.getAttribute('data-sort');

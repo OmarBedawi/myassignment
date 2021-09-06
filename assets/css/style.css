@@ -19,7 +19,7 @@
 
 .maat li a{
     color: black;
-    margin: 3px;    
+    margin: 5px;    
 }
 
 .maat li:hover{
@@ -52,6 +52,8 @@
     color: black;
     font-size: 20px;
     font-weight: bold;
+    width: 100%;
+    text-align: left;
 }
 
 .collapse-title:hover{
@@ -63,16 +65,11 @@
     display: inline;
     margin: 50px;
 }
-/*
-.dropdown{
-    margin: 20px 20px 20px 20px;
-}*/
+
 
 
 .dropdown button{
-    border-radius: 36px;/*
-    display:inline-block;
-    overflow:hidden;*/
+    border-radius: 36px;
     border: 1px solid black;
     width: 150px;
 }
@@ -81,9 +78,11 @@
     border-bottom: 1px solid rgb(200, 200, 200);
 }
 
-.card-title{
-    left: 0;
+.icon-color{
+    color: rgb(200, 200, 200);
+    font-size: 20px;
 }
+
 
 
 @media (max-width: 576px) {
