@@ -6,7 +6,7 @@ filters.forEach((elem) => {
 });
 
 function toggleIcon(elem) {
-    const icon = elem.target.querySelector(".fas");
+    const icon = elem.currentTarget.querySelector(".fas");
 
     icon.classList.toggle('fa-plus');
     icon.classList.toggle('fa-minus');
