@@ -1,26 +1,28 @@
-var elements = Array.prototype.slice.call(document.querySelectorAll("div.product"));
-var elementsReversed = Array.prototype.slice.call(document.querySelectorAll("div.product")).reverse();
-var target = document.querySelectorAll(".collapse-title");
+//Detect collapsible filters and toggle icons on click
+const filters = document.querySelectorAll(".collapse-title");
 
-target.forEach((elem) => {
-    elem.addEventListener('click', appendicon);
+filters.forEach((elem) => {
+    elem.addEventListener('click', toggleIcon);
 });
 
-
-function appendicon(elem) {
-    var icon = elem.target.querySelector(".fas");
-
-    console.log(icon);
+function toggleIcon(elem) {
+    const icon = elem.target.querySelector(".fas");
 
     icon.classList.toggle('fa-plus');
     icon.classList.toggle('fa-minus');
-
-    console.log(elem);
 }
 
+// filter results on sort filter click
+let sortFilter = document.querySelector(".sort-filter"); // Get the select
+const elements = Array.prototype.slice.call(document.querySelectorAll("div.product"));
+const elementsReversed = Array.prototype.slice.call(document.querySelectorAll("div.product")).reverse();
+
+sortFilter.addEventListener("click", sortItems);
 
 function sortItems(event) {
-    let sortType = event.target.getAttribute('data-sort');
+
+    let sortType = this.value;
+
     if (sortType === 'reverse') {
         document.getElementById('reverse').innerHTML = '';
         elementsReversed.forEach(function(elem) {
@@ -37,11 +39,4 @@ function sortItems(event) {
         document.getElementById('original').classList.remove('hidden');
     }
 
-    console.log('Sorting...' + event.target.getAttribute('data-sort'));
 }
-
-let sortArray = document.querySelectorAll("a.dropdown-item");
-
-sortArray.forEach(function(elem) {
-    elem.addEventListener("click", sortItems);
-});

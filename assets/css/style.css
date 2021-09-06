@@ -68,10 +68,11 @@
 
 
 
-.dropdown button{
+.sort-filter{
     border-radius: 36px;
     border: 1px solid black;
     width: 150px;
+    height: 35px;
 }
 
 .collapse-border{
